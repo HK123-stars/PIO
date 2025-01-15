@@ -60,7 +60,7 @@ for j = 1:n
    WW0 = [72; zeros(130, 1)];  % The initial WW0 is known to be 72   
    WW1 = zeros(131, 1); % Water content on day i ( including water layer )
     I = zeros(131, 1);   % Irrigation amount in growth period on day i
-    for i = 1:131
+    for i = 1:131   %  ( days of maturity)
 % Calculate W1
     W1 = fsolve(@(W1) W1 - WW0(i) - I(i) - P(i) + Ke(i) * E(ETo(i), W1) + T(i) + DP(Z(i), W1) - CR(i), 0);
     ET(i) =  Ke(i) * E(ETo(i), W1) + T(i);
