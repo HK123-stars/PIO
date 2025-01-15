@@ -1,201 +1,158 @@
  %% Document I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              %% 生成色系代码
 
-
 clc;
 clear;
-
-%% 第一种
- color1 = [142 182 156]./255; % 第一种颜色
-color2 = [238 191 109]./255;% 第二种颜色
+%% The first
+ color1 = [142 182 156]./255; % The first color
+color2 = [238 191 109]./255;% The second color
 color3 = [217 79 51]./255;
-color4 = [131 64 38]./255;% 第四种颜色
-
-n=87/3;% 60个颜色数据点
+color4 = [131 64 38]./255;
+n=87/3;% The number of color data points
 R1 =(linspace(color1(1),color2(1),n))';
 R2 =(linspace(color2(1),color3(1),n))';
 R3 =(linspace(color3(1),color4(1),n))';
 RY =[R1;R2;R3];
-
 G1 =(linspace(color1(2),color2(2),n))';
 G2 =(linspace(color2(2),color3(2),n))';
 G3 =(linspace(color3(2),color4(2),n))';
 GY =[G1;G2;G3];
-
 B1 =(linspace(color1(3),color2(3),n))';
 B2 =(linspace(color2(3),color3(3),n))';
 B3 =(linspace(color3(3),color4(3),n))';
 BY =[B1;B2;B3];
-
 mycolor1 = [RY,GY,BY];
 colormap(mycolor1);
 colorbar();
 
-%% 第二种
-
-color11 = [78 98 171]./255; % 第一种颜色
-color22 = [70 158 180]./255;% 第二种颜色
-color33 = [135 207 164]./255;% 第三种颜色
-color44 = [203 233 157]./255;% 第四种颜色
-n=87/3;% 60个颜色数据点
+%% The second
+color11 = [78 98 171]./255;
+color22 = [70 158 180]./255;
+color33 = [135 207 164]./255;
+color44 = [203 233 157]./255;
+n=87/3;% 
 R11 =(linspace(color11(1),color22(1),n))';
 R22 =(linspace(color22(1),color33(1),n))';
  R33 =(linspace(color33(1),color44(1),n))';
 RE =[R11;R22;R33];
-
 G11 =(linspace(color11(2),color22(2),n))';
 G22 =(linspace(color22(2),color33(2),n))';
  G33 =(linspace(color33(2),color44(2),n))';
 GE =[G11;G22;G33];
-
 B11 =(linspace(color11(3),color22(3),n))';
 B22 =(linspace(color22(3),color33(3),n))';
  B33 =(linspace(color33(3),color44(3),n))';
 BE =[B11;B22;B33];
-
 mycolor2 = [RE,GE,BE];
 colormap(mycolor2);
 colorbar();
 
-
-%% 第三种
-
-color111 = [244 111 68]./255 % 第一种颜色
-color222 = [253 217 133]./255;;% 第二种颜色
-color333 = [233 245 161]./255;% 第三种颜色
-color444 = [127 203 164]./255;% 第四种颜色
-n=87/3;% 60个颜色数据点
+%% The third
+color111 = [244 111 68]./255;
+color222 = [253 217 133]./255;
+color333 = [233 245 161]./255;
+color444 = [127 203 164]./255;
+n=87/3;
 R111 =(linspace(color111(1),color222(1),n))';
 R222 =(linspace(color222(1),color333(1),n))';
 R333 =(linspace(color333(1),color444(1),n))';
 RS =[R111;R222;R333];
-
 G111 =(linspace(color111(2),color222(2),n))';
 G222 =(linspace(color222(2),color333(2),n))';
 G333 =(linspace(color333(2),color444(2),n))';
 GS =[G111;G222;G333];
-
 B111 =(linspace(color111(3),color222(3),n))';
 B222 =(linspace(color222(3),color333(3),n))';
 B333 =(linspace(color333(3),color444(3),n))';
 BS =[B111;B222;B333];
-
 mycolor3 = [RS,GS,BS];
 colormap(mycolor3);
 colorbar();
 
-%% 第4种
-color1111 = [183 230 165]./255;% 第2种颜色
-color2222 = [124 203 162]./255;% 第3种颜色
-color3333 = [8 144 153]./255;% 第4种颜色
-% color3333 = [4 82 117]./255 % 第4种颜色
-color4444 = [0 49 71]./255;;% 第1种颜色
-n=87/3;% 60个颜色数据点
+%% Type 4
+color1111 = [183 230 165]./255;
+color2222 = [124 203 162]./255;
+color3333 = [8 144 153]./255;
+% color3333 = [4 82 117]./255;
+color4444 = [0 49 71]./255;
+n=87/3;
 R1111 =(linspace(color1111(1),color2222(1),n))';
 R2222 =(linspace(color2222(1),color3333(1),n))';
 R3333 =(linspace(color3333(1),color4444(1),n))';
 RS =[R1111;R2222;R3333];
-
 G1111 =(linspace(color1111(2),color2222(2),n))';
 G2222 =(linspace(color2222(2),color3333(2),n))';
 G3333 =(linspace(color3333(2),color4444(2),n))';
 GS =[G1111;G2222;G3333];
-
 B1111 =(linspace(color1111(3),color2222(3),n))';
 B2222 =(linspace(color2222(3),color3333(3),n))';
 B3333 =(linspace(color3333(3),color4444(3),n))';
 BS =[B1111;B2222;B3333];
-
 mycolor4 = [RS,GS,BS];
 colormap(mycolor4);
 colorbar();
 
 %%  Document 2
-%% 绘制三维气泡图
+%% Draw a 3D bubble map
 clc;
 clear;
 close all;
-
 load mycolorZ.mat;
-
-data = xlsread('TOPSIS典型年.xlsX');
-
-%丰水年 产量-碳排放量-产量
-X = data(:,2); %灌水量
-Y = data(:,3); %碳排放
-Z = data(:,1); %产量
-
- %平水年 产量-碳排放量-产量
- XX = data(:,5); %灌水量
- YY = data(:,6); %碳排放
- ZZ = data(:,4); %产量
- 
- %枯水年 产量-碳排放量-产量
- XXX = data(:,8); %灌水量
- YYY = data(:,9); %碳排放
- ZZZ = data(:,7); %产量
-
-%% 导入所有颜色矩阵
-
-%% 绘制子图（产量-直链淀粉-蛋白质）
-
-%    ZF =randperm(45)*125;% 散点特征：散点值大小/颜色深浅
+data = xlsread('TOPSIS Typical year.xlsX');
+%A year of abundant water 
+X = data(:,2); % Irrigation amount
+Y = data(:,3); % Carbon emissions
+Z = data(:,1); % yield
+ % Flat water year
+ XX = data(:,5); 
+ YY = data(:,6); 
+ ZZ = data(:,4); 
+ % Dry year 
+ XXX = data(:,8);
+ YYY = data(:,9);
+ ZZZ = data(:,7);
+%    ZF =randperm(45)*125;% Scatter feature: Scatter value size/color shade
   ZF = 45*125;
 figure('color',[1 1 1]);
 ax1 = subplot(221);
-
-X=X;%灌水量 
+X=X;
 num2str(X, '%.1f%%'); 
-
-Y=Y;%碳排放
+Y=Y;
 num2str(Y, '%.1f%%');
-
-Z=Z;%产量
-
+Z=Z;
 scatter3(X,Y,Z,ZF,mycolor1,'.');
 colormap(ax1,mycolor1);
 set(gca,'Linewidth',0.8);
-xlabel('I mm','Fontname','微软雅黑');
-ylabel('C kg/ha','Fontname','微软雅黑');
-zlabel('Y t/ha','Fontname','微软雅黑');
-title('2013 Y-C-I','Fontname','微软雅黑');
+xlabel('I mm','Fontname','Microsoft Yahei');
+ylabel('C kg/ha','Fontname','Microsoft Yahei');
+zlabel('Y t/ha','Fontname','Microsoft Yahei');
+title('2013 Y-C-I','Fontname','Microsoft Yahei');
  hold on
- %% 绘制子图（产量-直链淀粉-垩白度）
- 
- XX=XX;%灌水量
+ XX=XX;
 %  XX = XX * 100;
  num2str(XX, '%.1f%%');
- 
- YY=YY;%碳排放
- 
- ZZ=ZZ;%产量
- 
+ YY=YY;
+ ZZ=ZZ;
  ax2 = subplot(222);
  scatter3(XX,YY,ZZ,ZF,mycolor2,'.');
  colormap(ax2,mycolor2);
  set(gca,'Linewidth',0.8);
- xlabel('I mm ','Fontname','微软雅黑');
- ylabel('C kg/ha ','Fontname','微软雅黑');
- zlabel('Y t/ha','Fontname','微软雅黑');
- title('2008 Y-C-I','Fontname','微软雅黑');
- %% 绘制子图（产量-蛋白质-垩白度）
- 
- XXX=XXX; %灌水量
- 
+ xlabel('I mm ','Fontname','Microsoft Yahei');
+ ylabel('C kg/ha ','Fontname','Microsoft Yahei');
+ zlabel('Y t/ha','Fontname','Microsoft Yahei');
+ title('2008 Y-C-I','Fontname','Microsoft Yahei');
+ XXX=XXX;
  num2str(XXX, '%.1f%%');
- 
- YYY=YYY;%碳排放
- 
- ZZZ=ZZZ;%产量
- 
+ YYY=YYY;
+ ZZZ=ZZZ;
  ax3 = subplot(223);
  scatter3(XXX,YYY,ZZZ,ZF,mycolor3,'.');
  colormap(ax3,mycolor3);
  set(gca,'Linewidth',0.8);
- xlabel('I mm','Fontname','微软雅黑');
- ylabel('C kg/ha ','Fontname','微软雅黑');
- zlabel('Y t/ha','Fontname','微软雅黑');
- title('1999 Y-C-I','Fontname','微软雅黑');
+ xlabel('I mm','Fontname','Microsoft Yahei');
+ ylabel('C kg/ha ','Fontname','Microsoft Yahei');
+ zlabel('Y t/ha','Fontname','Microsoft Yahei');
+ title('1999 Y-C-I','Fontname','Microsoft Yahei');
 
-%% 设置颜色柱的位置信息\保存图片
+%% Set the position information of the color columnSave the image
 colorbar('position',[0.95,0.11,0.015,0.8]);
-print(gcf,'成图.jpg','-djpeg','-r900');
+print(gcf,'Diagramming.jpg','-djpeg','-r900');
